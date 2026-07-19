@@ -72,10 +72,32 @@
 
 // =================<!-- Practice 2  -->====================================
 
-let grandParent = document.getElementById("grandParent");
-let parent = document.getElementById("parent");
-let child = document.getElementById("child");
+// let grandParent = document.getElementById("grandParent");
+// let parent = document.getElementById("parent");
+// let child = document.getElementById("child");
 
-console.log("Grand Parent Clicked");
-console.log("Parent Clicked");
-console.log("Button Clicked");
+// console.log("Grand Parent Clicked");
+// console.log("Parent Clicked");
+// console.log("Button Clicked");
+
+// output =
+
+// Button Clicked
+// Parent Clicked
+// Grand Parent Clicked
+
+// 🎯 Practice 2-এর উদ্দেশ্য
+
+// Practice 1-এ ছিল:
+
+// Child
+//    ↑
+// Parent
+
+// Practice 2-এ হলো:
+
+// Child
+//    ↑
+// Parent
+//    ↑
+// Grand Parent
