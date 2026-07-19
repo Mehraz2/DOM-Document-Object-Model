@@ -37,14 +37,14 @@ btn.addEventListener("mouseover", function(){
 
 // ===============================================================
 
-document.addEventListener("mousemove", function(event){
+// document.addEventListener("mousemove", function(event){
 
-    console.log("X", event.clientX);
+//     console.log("X", event.clientX);
 
-    console.log("Y" event.clientY);
+//     console.log("Y" event.clientY);
     
     
-});
+// });
 
 // Output =
 

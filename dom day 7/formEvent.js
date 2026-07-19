@@ -38,19 +38,40 @@
 
 // Practice 2: Name + Email Form
 
-let form = document.getElementById("myForm");
+// let form = document.getElementById("myForm");
 
-let nameInput = document.getElementById("name");
+// let nameInput = document.getElementById("name");
 
-let emailInput = document.getElementById("email");
+// let emailInput = document.getElementById("email");
 
-form.addEventListener("submit", function (event){
+// form.addEventListener("submit", function (event){
 
-    event.preventDefault();
+//     event.preventDefault();
 
-    console.log("Name:", nameInput.value);
+//     console.log("Name:", nameInput.value);
 
-    console.log("Email:", emailInput.value);
+//     console.log("Email:", emailInput.value);
     
     
-}) ;
+// }) ;
+
+// Output
+
+// যদি user লিখে:
+
+// Name
+
+// Mehraz
+
+// Email
+
+// mehraz@gmail.com
+
+// তাহলে Console:
+
+// Name: Mehraz
+// Email: mehraz@gmail.com
+
+// =============================================
+
+
