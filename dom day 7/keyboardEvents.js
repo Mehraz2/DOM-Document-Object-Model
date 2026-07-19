@@ -86,9 +86,19 @@
 
 // =======================================================
 
-document.addEventListener("keydown", function (event) {
+// document.addEventListener("keydown", function (event) {
 
-    console.log("Key:", event.key);
-    console.log("Code:", event.code);
+//     console.log("Key:", event.key);
+//     console.log("Code:", event.code);
 
-});
+// });
+
+//  output= 
+
+// Key: a
+// Code: KeyA
+
+// অথবা:
+
+// Key: Enter
+// Code: Enter
