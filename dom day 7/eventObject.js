@@ -27,19 +27,19 @@
 
 // ======================================================================
 
-let btn = document.getElementById("btn");
+// let btn = document.getElementById("btn");
 
-btn.addEventListener("click", function(event){
+// btn.addEventListener("click", function(event){
 
-    console.log("Event Type:", event.type);
+//     console.log("Event Type:", event.type);
 
-    console.log("Clicked Element:", event.target);
+//     console.log("Clicked Element:", event.target);
 
-    console.log("Mouse X:", event.clientX);
+//     console.log("Mouse X:", event.clientX);
 
-    console.log("Mouse Y:", event.clientY);
+//     console.log("Mouse Y:", event.clientY);
 
-});
+// });
 
 // এখন button-এর বিভিন্ন জায়গায় click kori,
 
