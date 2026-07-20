@@ -8,12 +8,12 @@
 // সেটা return করবে।
 
 
-const ul = document.getElementById("fruits");
+// const ul = document.getElementById("fruits");
 
-ul.addEventListener("click", (event) => {
-    console.log(event.target);
+// ul.addEventListener("click", (event) => {
+//     console.log(event.target);
     
-})
+// })
 
 // এখন Browser-এ
 
@@ -27,14 +27,14 @@ ul.addEventListener("click", (event) => {
 
 // --------------------------------------
 
-const ul = document.getElementById("fruits");
+// const ul = document.getElementById("fruits");
 
-ul.addEventListener("click", (event) => {
-    const li = event.target.closest("li");
+// ul.addEventListener("click", (event) => {
+//     const li = event.target.closest("li");
 
-    console.log(li);
+//     console.log(li);
     
-})
+// })
 
 // এখন আবার
 
@@ -79,12 +79,12 @@ ul.addEventListener("click", (event) => {
 // ========practice 2===================================
 
 
-const ul = document.getElementById("fruits");
+// const ul = document.getElementById("fruits");
 
-ul.addEventListener("click", (event) =>{
+// ul.addEventListener("click", (event) =>{
 
-    event.target.remove();
-})
+//     event.target.remove();
+// })
 
 // এখন Browser-এ
 
@@ -106,15 +106,15 @@ ul.addEventListener("click", (event) =>{
 
 // ==========Practice 3=================
 
-const ul = document.getElementById("fruits");
+// const ul = document.getElementById("fruits");
 
-ul.addEventListener("click", (event) => {
+// ul.addEventListener("click", (event) => {
 
-    if (event.target.matches("button")) {
-        console.log("Button Clicked");
-    }
+//     if (event.target.matches("button")) {
+//         console.log("Button Clicked");
+//     }
 
-});
+// });
 
 // Test
 
@@ -131,17 +131,17 @@ ul.addEventListener("click", (event) => {
 // Button Clicked
 
 
-const ul = document.getElementById("fruits");
+// const ul = document.getElementById("fruits");
 
-ul.addEventListener("click", (event) => {
+// ul.addEventListener("click", (event) => {
 
-    if (event.target.matches("button")) {
+//     if (event.target.matches("button")) {
 
-        event.target.closest("li").remove();
+//         event.target.closest("li").remove();
 
-    }
+//     }
 
-});
+// });
 
 // এবার Test
 
