@@ -38,3 +38,17 @@ checkBtn.addEventListener("click", function () {
     console.log(title.classList.contains("red"));
 
 });
+
+// Output কী হবে?
+// HTML
+// <h1 id="title" class="red">Hello World</h1>
+
+// Click করলে Console-এ দেখাবে
+
+// true
+
+// কারণ red class আছে।
+
+
+// ================================================
+
