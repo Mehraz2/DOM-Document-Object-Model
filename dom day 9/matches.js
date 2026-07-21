@@ -1,87 +1,87 @@
-// matches() ki?
+// // matches() ki?
 
-// matches() কোনো element নির্দিষ্ট 
-// CSS selector-এর সাথে মিলে কিনা তা check করে।
+// // matches() কোনো element নির্দিষ্ট 
+// // CSS selector-এর সাথে মিলে কিনা তা check করে।
 
-// যদি selector-এর সাথে মিলে:
+// // যদি selector-এর সাথে মিলে:
 
-// true
+// // true
 
-// যদি না মিলে:
+// // যদি না মিলে:
 
-// false
+// // false
 
-const button = document.getElementById("btn");
+// const button = document.getElementById("btn");
 
-console.log(button.matches("button"));
+// console.log(button.matches("button"));
 
-// Output
+// // Output
 
-// true
+// // true
 
-// কারণ element-এর tag button।
+// // কারণ element-এর tag button।
 
-console.log(button.matches("#btn"));
+// console.log(button.matches("#btn"));
 
-// Output
+// // Output
 
-// true
+// // true
 
-// কারণ element-এর id btn।
+// // কারণ element-এর id btn।
 
-console.log(button.matches(".delete"));
+// console.log(button.matches(".delete"));
 
-// Output
+// // Output
 
-// true
+// // true
 
-// কারণ element-এর class delete।
+// // কারণ element-এর class delete।
 
-console.log(button.matches("h1"));
+// console.log(button.matches("h1"));
 
-// Output
+// // Output
 
-// false
+// // false
 
-// কারণ element h1 নয়।
-
-
-// মূল কাজ
-// element.matches("selector");
-
-// অর্থ:
-
-// Element টি selector-এর সাথে match করে কিনা check করা।
+// // কারণ element h1 নয়।
 
 
-// =======practice 2====================
+// // মূল কাজ
+// // element.matches("selector");
+
+// // অর্থ:
+
+// // Element টি selector-এর সাথে match করে কিনা check করা।
 
 
-const ul = document.getElementById("fruits");
+// // =======practice 2====================
 
-ul.addEventListener("click", (event) => {
 
-    if (event.target.matches("li")) {
-        console.log("Fruit Clicked");
-    }
+// const ul = document.getElementById("fruits");
 
-});
+// ul.addEventListener("click", (event) => {
 
-// Output
+//     if (event.target.matches("li")) {
+//         console.log("Fruit Clicked");
+//     }
 
-// Apple-এ click
+// });
 
-// Fruit Clicked
+// // Output
 
-// Mango-এ click
+// // Apple-এ click
 
-// Fruit Clicked
+// // Fruit Clicked
 
-// Banana-এ click
+// // Mango-এ click
 
-// Fruit Clicked
+// // Fruit Clicked
 
-// Add Fruit button-এ click
+// // Banana-এ click
 
-// কোনো Output হবে না।
+// // Fruit Clicked
+
+// // Add Fruit button-এ click
+
+// // কোনো Output হবে না।
 
