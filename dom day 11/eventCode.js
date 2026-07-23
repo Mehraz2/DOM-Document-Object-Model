@@ -38,3 +38,14 @@ document.addEventListener("keydown", function (event) {
 document.addEventListener("keydown", function (event) {
     console.log("Button Pressed:", event.code);
 });
+
+//  output:
+
+// Button Pressed: KeyA
+// Button Pressed: KeyB
+// Button Pressed: Digit1
+// Button Pressed: Enter
+// Button Pressed: Space
+
+// =============================================================
+
