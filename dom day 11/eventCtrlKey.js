@@ -82,3 +82,62 @@ document.addEventListener("keydown", function (event) {
     }
 
 });
+
+// শুধু A tap korle
+
+// Output:
+
+// (কোনো output হবে না)
+
+// কারণ event.ctrlKey = false
+
+// এবার Ctrl + A চাপো
+
+// Output:
+
+// Ctrl is pressed
+
+// কারণ event.ctrlKey = true
+
+document.addEventListener("keydown", function (event) {
+
+    if (event.ctrlKey) {
+        console.log("Ctrl +", event.key);
+    }
+
+});
+
+//  Output
+
+// যদি চাপো:
+
+// Ctrl + C
+
+// Ctrl + c
+
+// Ctrl + S
+
+// Ctrl + s
+
+// Ctrl + A
+
+// Ctrl + a
+
+// 🤔 এটা কেন দরকার?
+
+// কারণ বাস্তবে আমরা শুধু জানতে চাই না যে Ctrl চাপা আছে।
+
+// আমরা জানতে চাই:
+
+// Ctrl-এর সাথে কোন key চাপা হয়েছে?
+
+// তখন আমরা shortcut detect করতে পারি।
+
+if (event.ctrlKey && event.key === "s") {
+    console.log("Saving...");
+}
+
+// event.ctrlKey → Ctrl চাপা আছে?
+// event.key === "s" → S চাপা হয়েছে?
+
+// দুটোই true হলে:
