@@ -181,3 +181,31 @@ newChild.textContent = "Mango";
 
 // Replace
 parent.replaceChild(newChild, oldChild);
+
+
+// 🖥️ Output
+// Before
+// Apple
+// Banana
+// Orange
+
+// ⬇️
+
+// After
+// Apple
+// Mango
+// Orange
+// 🧠 কী নতুন shikhlam?
+
+
+
+// আগের Practice-গুলোতে আমরা id দিয়ে element select করেছি।
+
+// এবার children ব্যবহার করে index অনুযায়ী child select করলাম।
+
+
+// parent.children[0] // Apple
+// parent.children[1] // Banana
+// parent.children[2] // Orange
+
+// অর্থাৎ, replaceChild()-এর সাথে children-ও connect হয়ে গেল।
