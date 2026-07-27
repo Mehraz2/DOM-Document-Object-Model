@@ -114,6 +114,28 @@ post.insertAdjacentHTML(
 );
 
 
+// output = 
+
+// 🖥️ Before
+// Understanding JavaScript Closures
+
+// Closures allow inner functions to access variables from outer functions.
+
+
+
+
+
+// 🖥️ After
+// Understanding JavaScript Closures
+
+// Closures allow inner functions to access variables from outer functions.
+
+// Related Posts
+
+// • JavaScript Scope
+// • Arrow Functions
+// • DOM Manipulation
+
 
 
 
