@@ -116,3 +116,29 @@ deleteButtons.forEach((button) => {
 
     });
 });
+
+
+
+//  Output
+
+
+// Before Click
+// Card 1
+// [Delete]
+
+// Card 2
+// [Delete]
+
+// Card 3
+// [Delete]
+
+// যদি Card 2-এর Delete button-এ click করো...
+
+// After Click
+// Card 1
+// [Delete]
+
+// Card 3
+// [Delete]
+
+// শুধুমাত্র Card 2 remove হবে।

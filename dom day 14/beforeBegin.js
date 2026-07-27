@@ -46,3 +46,24 @@ addBtn.addEventListener("click", () => {
     "<li>C++</li>"
   );
 });
+
+// 🖥️ Output
+// শুরুতে
+// Programming Languages
+
+// • JavaScript
+// • Python
+// • Java
+
+// [Add C++ First]
+// Button-এ একবার click করলে
+// • C++
+// • JavaScript
+// • Python
+// • Java
+// আরও click করলে
+// • C++
+// • C++
+// • JavaScript
+// • Python
+// • Java
