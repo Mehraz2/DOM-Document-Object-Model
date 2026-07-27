@@ -134,6 +134,104 @@ blog.insertAdjacentHTML(
     `
 );
 
+// output = 
+
+
+// 🖥️ Before
+// JavaScript Basics
+
+// Learn variables, functions, and loops.
+
+
+
+
+// 🖥️ After
+// JavaScript Basics
+
+// Learn variables, functions, and loops.
+
+// -------------------------
+
+// Next Topic
+
+// DOM Manipulation
+
+
+
+const loginForm = document.getElementById("loginForm");
+
+loginForm.insertAdjacentHTML(
+    "afterend",
+    "<p style='color:green;'>✅ Login form loaded successfully.</p>"
+);
+
+// output = 
+
+// 🖥️ Before
+// Username: [________]
+
+// Password: [________]
+
+// [ Login ]
+// 🖥️ After
+// Username: [________]
+
+// Password: [________]
+
+// [ Login ]
+
+// ✅ Login form loaded successfully.
+
+
+// ✅ কী bujhlam?
+// afterend target element-এর বাইরে, ঠিক পরে HTML যোগ করে।
+// Insert হওয়া element sibling হয়, child নয়।
+// Existing element-এর ভিতরের কোনো content পরিবর্তন হয় না।
+
+
+// ======= practice 2 ==================================================================
+
+
+const product = document.getElementById("product");
+
+product.insertAdjacentHTML(
+    "afterend",
+    `
+    <div class="reviews">
+        <h3>Customer Reviews</h3>
+        <p>⭐⭐⭐⭐⭐ Excellent product!</p>
+    </div>
+    `
+);
+
+// output = 
+
+// 🖥️ Before
+// Wireless Mouse
+
+// Price: $25
+// 🖥️ After
+// Wireless Mouse
+
+// Price: $25
+
+// Customer Reviews
+
+// ⭐⭐⭐⭐⭐ Excellent product!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
