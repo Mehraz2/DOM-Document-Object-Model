@@ -88,3 +88,21 @@ post.insertAdjacentHTML(
     <hr>
     `
 );
+
+// output =
+
+// 🖥️ Before
+// Understanding JavaScript DOM
+
+// This article explains how to manipulate the DOM.
+// 🖥️ After
+// 📚 Latest Blog
+
+// Published on: July 27, 2026
+
+// --------------------------------
+
+// Understanding JavaScript DOM
+
+// This article explains how to manipulate the DOM.
+
