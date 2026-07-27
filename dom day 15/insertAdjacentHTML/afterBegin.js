@@ -56,3 +56,19 @@ notification.insertAdjacentHTML(
     "afterbegin",
     "<span>🆕 NEW</span>"
 );
+
+// output = 
+
+// 🖥️ Before
+// New Message
+
+
+
+// You have received a message from Mehraz.
+// 🖥️ After
+// 🆕 NEW
+
+// New Message
+
+// You have received a message from Mehraz.
+
