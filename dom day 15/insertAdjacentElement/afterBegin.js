@@ -89,6 +89,31 @@ newItem.innerText = "HTML";
 list.insertAdjacentElement("afterbegin", newItem);
 
 
+// Output:
+
+// Before:
+
+// <ul id="list">
+
+//     <li>JavaScript</li>
+//     <li>React</li>
+
+// </ul>
+
+
+
+
+
+// After:
+
+// <ul id="list">
+
+//     <li>HTML</li>
+//     <li>JavaScript</li>
+//     <li>React</li>
+
+// </ul>
+
 
 
 

@@ -148,5 +148,31 @@ title.insertAdjacentHTML(
 );
 
 
+// Output:
+
+// Before:
+
+// <h1 id="title">
+//     JavaScript DOM
+// </h1>
+
+
+
+
+
+// After:
+
+// <h1 id="title">
+//     JavaScript DOM
+// </h1>
+
+// <p>
+//     This paragraph is added after h1
+// </p>
+
+
+
+
+
 
 

@@ -187,10 +187,58 @@ button.innerText = "View Profile";
 card.insertAdjacentElement("beforeend", button);
 
 
+// Output:
+
+// Before:
+
+// <div id="card">
+
+//     <h2>Profile Card</h2>
+//     <p>User Information</p>
+
+// </div>
 
 
 
 
+
+// After:
+
+// <div id="card">
+
+//     <h2>Profile Card</h2>
+//     <p>User Information</p>
+//     <button>View Profile</button>
+
+// </div>
+
+
+// এখানে:
+
+// card → target element
+// beforeend → card-এর ভিতরে একদম শেষে
+// button → নতুন element
+// DOM Structure:
+
+// Before:
+
+// div#card
+//  |
+//  ├── h2
+//  └── p
+
+
+
+
+
+
+// After:
+
+// div#card
+//  |
+//  ├── h2
+//  ├── p
+//  └── button ✅ নতুন element
 
 
 

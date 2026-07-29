@@ -204,9 +204,44 @@ button.insertAdjacentElement("afterend", message);
 
 
 
+// Output:
+
+// Before:
+
+// <button id="btn">
+//     Click Button
+// </button>
+
+// After:
+
+// <button id="btn">
+//     Click Button
+// </button>
+
+// <p>
+//     Button এর পরে নতুন paragraph
+// </p>
 
 
+// এখানে:
 
+// button → target element
+// "afterend" → button-এর বাইরে, ঠিক পরে
+// message → নতুন element
+// DOM Structure:
 
+// Before:
+
+// body
+//  |
+//  └── button
+
+// After:
+
+// body
+//  |
+//  ├── button
+//  |
+//  └── p  ✅ নতুন element
 
 
