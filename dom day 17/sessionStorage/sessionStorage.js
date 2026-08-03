@@ -112,14 +112,22 @@ sessionStorage.clear();
 // localStorage = Permanent Storage
 // sessionStorage = Temporary Storage (Current Tab Only)
 
+
+
+
 // ===============================================================================
-
-
 //   for better understanding under below..............
+// ================================================================================
+
+
+
+
+
 
 // sessionStorage কী?
 
-// sessionStorage হলো ব্রাউজারের একটি Storage API, যেখানে তুমি key-value আকারে ডেটা রাখতে পারো।
+// sessionStorage হলো ব্রাউজারের একটি Storage API, 
+// যেখানে key-value আকারে ডেটা রাখতে পারো।
 
 // এটি localStorage-এর মতোই কাজ করে, কিন্তু একটি বড় পার্থক্য আছে।
 
@@ -245,20 +253,29 @@ sessionStorage.removeItem()
 
 // একটি Item Delete করে।
 
-// sessionStorage.clear()
+sessionStorage.clear()
 
 // সব Delete করে।
 
-// sessionStorage.length
+sessionStorage.length
 
 // কয়টি Item আছে।
 
-// console.log(sessionStorage.length);
-// sessionStorage.key(index)
+console.log(sessionStorage.length);
+sessionStorage.key(index)
 
 // Index অনুযায়ী Key বের করে।
 
-// console.log(sessionStorage.key(0));
+console.log(sessionStorage.key(0));
+
+
+
+
+
+
+
+
+
 // মনে রাখার বিষয় ⚡
 // sessionStorage শুধুমাত্র String সংরক্ষণ করে।
 // Object বা Array রাখতে হলে JSON.stringify() ব্যবহার করতে হবে।

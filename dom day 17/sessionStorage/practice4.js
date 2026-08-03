@@ -38,6 +38,48 @@ showBtn.addEventListener("click", () => {
 
 
 
+// ▶️ Output
+
+
+
+
+
+// Step 1 — Save User
+
+// Console
+
+// User Saved
+
+// Session Storage
+
+// Key	Value
+// user	{"name":"Mehraz","age":20,"city":"Noakhali"}
+
+
+
+
+
+
+
+
+// Step 2 — Show User
+
+// Console
+
+
+
+// {
+//   name: "Mehraz",
+//   age: 20,
+//   city: "Noakhali"
+// }
+// 🎯 কী shikhlam
+// sessionStorage শুধুমাত্র String store করতে পারে।
+// Object store করার আগে JSON.stringify() ব্যবহার করতে হয়।
+// আবার Object হিসেবে ফিরে পেতে JSON.parse() ব্যবহার করতে হয়।
+// localStorage-এর ক্ষেত্রেও একই নিয়ম প্রযোজ্য।
+
+
 
 
 

@@ -31,3 +31,128 @@ showBtn.addEventListener("click", () => {
   console.log("City:", sessionStorage.getItem("city"));
   console.log("Country:", sessionStorage.getItem("country"));
 });
+
+
+
+
+
+
+
+
+// ▶️ Output
+
+
+// Step 1: Save Data
+
+// Console:
+
+// Data Saved
+
+// Session Storage:
+
+// Key	Value
+// name	Mehraz
+// city	Noakhali
+// country	Bangladesh
+
+
+
+
+
+
+// Step 2: Show Data
+
+// Console:
+
+// Name: Mehraz
+// City: Noakhali
+// Country: Bangladesh
+
+
+
+
+
+
+
+
+// Step 3: Clear Storage
+
+// Console:
+
+// All Data Cleared
+
+// Session Storage:
+
+// (Empty)
+
+
+
+
+
+
+
+
+
+
+
+// Step 4: Show Data আবার
+
+// Console:
+
+// Name: null
+// City: null
+// Country: null
+
+
+
+
+
+
+
+
+
+
+// 🎯 কী shikhlam
+
+// sessionStorage.clear() সব key-value একসাথে delete করে।
+// removeItem() শুধু একটি key delete করে।
+// clear() চালানোর পর getItem() সব key-এর জন্য null return করে।
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
