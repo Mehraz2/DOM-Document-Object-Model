@@ -14,7 +14,7 @@ saveBtn.addEventListener("click", () => {
 
 // ▶️ Output
 
-// ধরো Input-এ লিখলে:
+// ধরো Input-এ লিখল:
 
 // Mehraz
 
@@ -29,7 +29,20 @@ saveBtn.addEventListener("click", () => {
 // Key      Value
 // ---------------------
 // name     Mehraz
-// 🎯 এই Practice-এ কী শিখলে?
+// 🎯 এই Practice-এ কী bujhlam?
 // input.value নেওয়া
 // localStorage.setItem() দিয়ে data save করা
 // User-এর input Browser-এর Local Storage-এ সংরক্ষণ করা
+
+
+
+
+
+
+
+
+
+
+
+
+

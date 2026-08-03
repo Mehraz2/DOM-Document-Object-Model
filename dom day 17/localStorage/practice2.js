@@ -19,3 +19,48 @@ saveBtn.addEventListener("click", () => {
         
 
 })
+
+
+
+
+// ▶️ Output
+
+// User লিখল—
+
+// Green
+
+// Button-এ click করল।
+
+// Console:
+
+// Favorite Color Saved!
+
+// Local Storage:
+
+// Key               Value
+// -----------------------------
+// favoriteColor     Green
+
+// Page Refresh করলেও এই data থাকবে।
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
