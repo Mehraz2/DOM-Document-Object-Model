@@ -73,12 +73,20 @@ const intervalId = setInterval(() => {
 
 // বর্তমান সংখ্যাটি Console-এ দেখাবে।
 
+
+
+
+
 // 4.
 // if (count === 5) {
 
 // প্রতিবার Check করবে,
 
 // count কি ৫ হয়েছে?
+
+
+
+
 
 // 5.
 // clearInterval(intervalId);
@@ -89,10 +97,15 @@ const intervalId = setInterval(() => {
 
 // এরপর আর Callback Function চলবে না।
 
+
+
+
 // 6.
 // console.log("Counter Stopped!");
 
 // User-কে জানিয়ে দিচ্ছে যে Counter বন্ধ হয়েছে।
+
+
 
 // 7.
 // count++;
