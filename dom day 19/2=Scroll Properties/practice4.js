@@ -179,14 +179,16 @@ box.scrollTop = 0;
 
 
 
+// =====================scrollTop Summary
+
+// Value Read
+console.log(box.scrollTop);
 
 
-// =====================🔥 আজকের সবচেয়ে গুরুত্বপূর্ণ পার্থক্য========
-// পুরো Web Page
-window.scrollY
+// // Value Change
+box.scrollTop = 0;
 
+// 📌 একটা Property, দুইটা কাজ:
 
-// নির্দিষ্ট Element
-box.scrollTop
-
-// এই দুটোর পার্থক্য বুঝে গেলে scrollTop topic-এর প্রায় ৮০% আয়ত্ত হয়ে যাবে।
+// ✅ Read (বর্তমান Scroll Position জানা)
+// ✅ Write (Scroll Position পরিবর্তন করা)
