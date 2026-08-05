@@ -158,4 +158,11 @@ result.textContent = `${box.scrollTop} px`;
 
 
 
+// ======================🔥 আজকের সবচেয়ে গুরুত্বপূর্ণ পার্থক্য
+// পুরো Web Page
+window.scrollY
+// নির্দিষ্ট Element
 
+box.scrollTop
+
+// এই দুটোর পার্থক্য বুঝে গেলে scrollTop topic-এর প্রায় ৮০% আয়ত্ত হয়ে যাবে।
