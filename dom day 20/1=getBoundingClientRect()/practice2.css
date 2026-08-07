@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    height: 150vh;
+}
+
+.box{
+    width: 220px;
+    height: 120px;
+
+    background: royalblue;
+    color: white;
+    font-size: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 180px;
+    margin-left: 120px;
+}
