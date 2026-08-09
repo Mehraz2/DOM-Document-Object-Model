@@ -1,15 +1,15 @@
-// const box = document.querySelector(".box");
+const box = document.querySelector(".box");
 
-// window.addEventListener("scroll", function () {
+window.addEventListener("scroll", function () {
 
-//     const rect = box.getBoundingClientRect();
+    const rect = box.getBoundingClientRect();
 
-//     console.clear();
+    console.clear();
 
-//     console.log("Top :", rect.top);
-//     console.log("Bottom :", rect.bottom);
+    console.log("Top :", rect.top);
+    console.log("Bottom :", rect.bottom);
 
-// });
+});
 
 
 
