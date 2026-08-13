@@ -33,25 +33,41 @@ form.addEventListener("focusin", function () {
 
 
 // 👀 Output
+
 // প্রথমে
 // Registration Form
 
 // [ Enter your name ]
 
 // [ Enter your email ]
+
 // Name input-এ click করলে
+
+
 // Name input
 //       ↓
 // focusin
 //       ↓
 // Form background → lightyellow
+
+
+
+
 // Email input-এ click করলে
+
 // Email input
 //        ↓
 // focusin
 //        ↓
 // Form background → lightyellow
-// 🧠 Output Logic
+
+
+
+
+
+
+//=========================================== 🧠 Output Logic ===========================================
+
 // User clicks an input
 //           ↓
 // Input gets focus
@@ -63,11 +79,19 @@ form.addEventListener("focusin", function () {
 // Parent form catches the event
 //           ↓
 // Background changes
-// 🔍 Code Explanation
+
+
+
+//  ========================================🔍 Code Explanation ==========================================
+
 // 1️⃣ Form select
 // const form = document.querySelector("#form");
 
 // form element-টাকে select করলাম।
+
+
+
+
 
 // 2️⃣ Event listener
 // form.addEventListener("focusin", function () {
@@ -76,10 +100,21 @@ form.addEventListener("focusin", function () {
 
 // Form-এর ভেতরে কোনো element focus পেলে function execute করো।
 
+
+
+
 // 3️⃣ Background change
 // form.style.backgroundColor = "lightyellow";
 
 // পুরো form-এর background পরিবর্তন করা হচ্ছে।
+
+
+
+
+
+
+
+
 
 // ⚠️ গুরুত্বপূর্ণ
 
@@ -92,6 +127,7 @@ form.addEventListener("focusin", function () {
 // No bubbling
 //  ↓
 // Parent form event ধরতে পারে না
+
 
 // কিন্তু:
 
