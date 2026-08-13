@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 350px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 2px solid gray;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+#message {
+    margin-top: 15px;
+}
