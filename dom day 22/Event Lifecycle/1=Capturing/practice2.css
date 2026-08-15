@@ -1,0 +1,35 @@
+
+
+#grandparent {
+
+    padding: 40px;
+    border:  2px solid black;
+}
+
+#parent2 {
+
+    padding: 10px;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+
+#child2 {
+
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
