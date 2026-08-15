@@ -1,33 +1,33 @@
 
 
-// প্রথমে Event Lifecycle কী? 🤔
+// // প্রথমে Event Lifecycle কী? 🤔
 
-// যখন কোনো element-এ click kori, event সঙ্গে সঙ্গে সেই element-এ যায় না।
+// // যখন কোনো element-এ click kori, event সঙ্গে সঙ্গে সেই element-এ যায় না।
 
 
-// suppose, HTML এমন:
+// // suppose, HTML এমন:
 
-// <body>
-//   <div>
-//     <button>Click Me</button>
-//   </div>
-// </body>
+// // <body>
+// //   <div>
+// //     <button>Click Me</button>
+// //   </div>
+// // </body>
 
-//  যদি button-এ click করো, তাহলে event-এর যাত্রাপথ হবে:
+// //  যদি button-এ click করো, তাহলে event-এর যাত্রাপথ হবে:
 
-// Window
-//  ↓
-// Document
-//  ↓
-// HTML
-//  ↓
-// Body
-//  ↓
-// Div
-//  ↓
-// Button
+// // Window
+// //  ↓
+// // Document
+// //  ↓
+// // HTML
+// //  ↓
+// // Body
+// //  ↓
+// // Div
+// //  ↓
+// // Button
 
-// এটাকে বলে Capturing Phase।
+// // এটাকে বলে Capturing Phase।
 
 
 
@@ -42,47 +42,47 @@
 
 
 
-// Capturing কী? 🧐
+// // Capturing কী? 🧐
 
-// Capturing হলো এমন একটি process, যেখানে event উপরের element থেকে নিচের element-এর দিকে যায়।
+// // Capturing হলো এমন একটি process, যেখানে event উপরের element থেকে নিচের element-এর দিকে যায়।
 
-// Window
-//  ↓
-// Document
-//  ↓
-// HTML
-//  ↓
-// Body
-//  ↓
-// Div
-//  ↓
-// Button
+// // Window
+// //  ↓
+// // Document
+// //  ↓
+// // HTML
+// //  ↓
+// // Body
+// //  ↓
+// // Div
+// //  ↓
+// // Button
 
-// এখানে event ধীরে ধীরে parent থেকে child-এর দিকে যাচ্ছে।
+// // এখানে event ধীরে ধীরে parent থেকে child-এর দিকে যাচ্ছে।
 
 
 
 
 
 
-// বাস্তব উদাহরণ 🎯
-// suppse, একজন ডাকপিয়ন একটি চিঠি দিতে এসেছে।
+// // বাস্তব উদাহরণ 🎯
+// // suppse, একজন ডাকপিয়ন একটি চিঠি দিতে এসেছে।
 
-// চিঠি দেওয়ার পথ:
+// // চিঠি দেওয়ার পথ:
 
-// বাড়ি
-//  ↓
-// তলা
-//  ↓
-// রুম
-//  ↓
-// টেবিল
-//  ↓
-// amar হাত
+// // বাড়ি
+// //  ↓
+// // তলা
+// //  ↓
+// // রুম
+// //  ↓
+// // টেবিল
+// //  ↓
+// // amar হাত
 
-// এখানে চিঠি উপরে থেকে নিচে এসেছে।
+// // এখানে চিঠি উপরে থেকে নিচে এসেছে।
 
-// Capturing-ও ঠিক এভাবেই কাজ করে।
+// // Capturing-ও ঠিক এভাবেই কাজ করে।
 
 
 
@@ -94,117 +94,117 @@
 
 
 
-// Capturing-এর Syntax
+// // Capturing-এর Syntax
 
 
-element.addEventListener(
-  "click",
-  function () {
-    console.log("Hello");
-  },
-  true
-);
+// element.addEventListener(
+//   "click",
+//   function () {
+//     console.log("Hello");
+//   },
+//   true
+// );
 
 
-// true কেন ব্যবহার করা হয়? 🤔
+// // true কেন ব্যবহার করা হয়? 🤔
 
-addEventListener("click", callback, true);
+// addEventListener("click", callback, true);
 
-// তৃতীয় parameter-এর value যদি true হয়, তাহলে event Capturing Phase-এ কাজ করবে।
+// // তৃতীয় parameter-এর value যদি true হয়, তাহলে event Capturing Phase-এ কাজ করবে।
 
-// true = Capturing
+// // true = Capturing
 
-// false = Bubbling
-// Example 1
+// // false = Bubbling
+// // Example 1
 
-// HTML
-// <div id="parent">
-//   <button id="child">Click Me</button>
-// </div>
+// // HTML
+// // <div id="parent">
+// //   <button id="child">Click Me</button>
+// // </div>
 
 
 
-// CSS
-// #parent {
-//   padding: 50px;
-//   border: 2px solid black;
-// }
+// // CSS
+// // #parent {
+// //   padding: 50px;
+// //   border: 2px solid black;
+// // }
 
-// #child {
-//   padding: 20px;
-// }
+// // #child {
+// //   padding: 20px;
+// // }
 
 
 
 
 
-// JavaScript
-const parent = document.getElementById("parent");
-const child = document.getElementById("child");
+// // JavaScript
+// const parent = document.getElementById("parent");
+// const child = document.getElementById("child");
 
 
-parent.addEventListener(
-  "click",
-  function () {
-    console.log("Parent");
-  },
-  true
-);
+// parent.addEventListener(
+//   "click",
+//   function () {
+//     console.log("Parent");
+//   },
+//   true
+// );
 
 
-child.addEventListener(
-  "click",
-  function () {
-    console.log("Child");
-  },
-  true
-);
+// child.addEventListener(
+//   "click",
+//   function () {
+//     console.log("Child");
+//   },
+//   true
+// );
 
-// Output
+// // Output
 
-// Parent
-// Child
+// // Parent
+// // Child
 
 
 
 
 
-// Output এমন হলো কেন? 🤔
+// // Output এমন হলো কেন? 🤔
 
-// কারণ event প্রথমে parent-এর কাছে গেছে।
+// // কারণ event প্রথমে parent-এর কাছে গেছে।
 
-// Parent
-//  ↓
-// Child
+// // Parent
+// //  ↓
+// // Child
 
-// তারপর callback execute হয়েছে।
+// // তারপর callback execute হয়েছে।
 
 
 
 
 
-// যদি true না লিখি?
-parent.addEventListener("click", function () {
-  console.log("Parent");
-});
+// // যদি true না লিখি?
+// parent.addEventListener("click", function () {
+//   console.log("Parent");
+// });
 
 
-child.addEventListener("click", function () {
-  console.log("Child");
-});
+// child.addEventListener("click", function () {
+//   console.log("Child");
+// });
 
-// Output
-// Child
-// Parent
+// // Output
+// // Child
+// // Parent
 
 
 
 
 
 
-// এটা হলো Bubbling।
+// // এটা হলো Bubbling।
 
-// এটা পরে শিখব।
+// // এটা পরে শিখব।
 
 
 
@@ -212,29 +212,29 @@ child.addEventListener("click", function () {
 
 
 
-// Capturing কখন ব্যবহার করা হয়? 🎯
+// // Capturing কখন ব্যবহার করা হয়? 🎯
 
-// 1. Event-এর flow নিয়ন্ত্রণ করার জন্য
-addEventListener("click", callback, true);
+// // 1. Event-এর flow নিয়ন্ত্রণ করার জন্য
+// addEventListener("click", callback, true);
 
-// 2. Parent element-কে আগে execute করানোর জন্য
+// // 2. Parent element-কে আগে execute করানোর জন্য
 
-// Parent
-//  ↓
-// Child
+// // Parent
+// //  ↓
+// // Child
 
 
 
 
 
-// 3. Complex UI তৈরি করার সময়
+// // 3. Complex UI তৈরি করার সময়
 
-// যেমন:
+// // যেমন:
 
-// Modal
-// Dropdown
-// Sidebar
-// Nested Menu
+// // Modal
+// // Dropdown
+// // Sidebar
+// // Nested Menu
 
 
 
@@ -244,11 +244,11 @@ addEventListener("click", callback, true);
 
 
 
-// Capturing কখন ব্যবহার করা হয় না? ❌
+// // Capturing কখন ব্যবহার করা হয় না? ❌
 
-// সাধারণ website-এ Capturing খুব কম ব্যবহার করা হয়।
+// // সাধারণ website-এ Capturing খুব কম ব্যবহার করা হয়।
 
-// বেশিরভাগ সময় developer-রা Bubbling ব্যবহার করে।
+// // বেশিরভাগ সময় developer-রা Bubbling ব্যবহার করে।
 
 
 
@@ -269,28 +269,28 @@ addEventListener("click", callback, true);
 
 
 
-// মনে রাখার Shortcut 📝
+// // মনে রাখার Shortcut 📝
 
-// Capturing = Top → Bottom
+// // Capturing = Top → Bottom
 
 
-// Parent → Child
+// // Parent → Child
 
 
 
 
-// true = Capturing
-// Window
-//  ↓
-// Document
-//  ↓
-// HTML
-//  ↓
-// Body
-//  ↓
-// Parent
-//  ↓
-// Child
+// // true = Capturing
+// // Window
+// //  ↓
+// // Document
+// //  ↓
+// // HTML
+// //  ↓
+// // Body
+// //  ↓
+// // Parent
+// //  ↓
+// // Child
 
 
 
@@ -304,21 +304,21 @@ addEventListener("click", callback, true);
 
 
 
-// VS Code-এ comment করে লিখে রাখতে ..................
+// // VS Code-এ comment করে লিখে রাখতে ..................
 
-// // Capturing
+// // // Capturing
 
 
-// // Event travels from top to bottom.
+// // // Event travels from top to bottom.
 
 
-// Parent → Child
+// // Parent → Child
 
 
-addEventListener("click", callback, true);
+// addEventListener("click", callback, true);
 
 
-true = Capturing
+// // true = Capturing
 
 
 
