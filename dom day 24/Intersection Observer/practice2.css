@@ -1,0 +1,17 @@
+/* practice 2 */
+
+.space2 {
+    height: 100vh;
+}
+
+#box2,
+#box3,
+#box4 {
+    width: 300px;
+    padding: 50px 20px;
+    margin: auto;
+    background-color: tomato;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
