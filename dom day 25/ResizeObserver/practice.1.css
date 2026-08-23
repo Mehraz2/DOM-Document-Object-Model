@@ -1,0 +1,10 @@
+#box1 {
+    width: 200px;
+    height: 150px;
+    text-align: center;
+
+    background-color: blue;
+
+    resize: both;
+    overflow: auto;
+}
