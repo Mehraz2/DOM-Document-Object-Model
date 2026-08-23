@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    color: blueviolet;
+}
+
+.space2 {
+    height: 100vh;
+}
+
+.box2 {
+    width: 300px;
+    padding: 30px;
+    margin: 0 auto 300px;
+    background: tomato;
+    text-align: center;
+
+    opacity: 0;
+    transform: translate(100px);
+
+    transform: 0.6s ease;
+}
+
+.box2.show {
+    opacity: 1;
+    transform: translateY(0);
+}
