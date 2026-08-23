@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: white;
+}
+
+.space4 {
+    height: 100vh;
+}
+
+.box4 {
+    width: 300px;
+    padding: 30px;
+    margin: auto;
+
+    background: tomato;
+    text-align: center;
+
+    opacity: 0;
+    transform: translateY(100px);
+
+    transition: 0.8s ease;
+}
+
+.box4.show {
+    opacity: 1;
+    transform: translateY(0);
+}
