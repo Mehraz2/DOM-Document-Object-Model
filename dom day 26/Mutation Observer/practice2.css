@@ -1,0 +1,48 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.space2 {
+    height: 100vh;
+}
+
+.box2 {
+    width: 350px;
+    margin: auto;
+    padding: 30px;
+
+    background: #222;
+    border-radius: 10px;
+
+    text-align: center;
+
+    transition: 0.5s ease;
+}
+
+.text2 {
+    color: white;
+}
+
+.active2 {
+    color: red;
+    font-size: 24px;
+}
+
+button {
+    margin-top: 20px;
+
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
